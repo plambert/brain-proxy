@@ -1,0 +1,9 @@
+h1= title['long'] || title['short'] || title
+p Welcome to #{title['short'] || title}
+p= foo
+ul
+  - each show in tv_shows
+    li
+      a(href: show)= show
+
+pre= tv_shows.join(", ")
